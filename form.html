@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        *{
+            box-sizing:border-box ;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body {
+            margin: 20px 30px;
+            padding: 15px;
+            background-color:#ffc100;
+        }
+        .container{
+            width: 100%;
+            margin: 15px;
+            padding: 20px;
+            border: 2px solid rgb(165, 159, 161);
+            border-radius: 20px;
+            background-color: rgb(252, 237, 157);
+            color: rgb(8, 0, 0);
+        }
+        h1,h3{
+            text-align: center;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"]
+        {
+            width: 100%;
+            border-radius: 20px;
+            border: 1px solid rgb(0, 0, 0);
+        }
+        .pa{
+            margin: 10px;
+            padding: 5px;
+            background-color: whitesmoke;
+        
+        }
+        .checks{
+            margin: 10px;
+        }
+        #sub{
+            width: 100%;
+            padding: 5px;
+            color: black;
+            font-weight: 600;
+            background-color: #fefc10;
+            cursor:pointer ;
+            border-radius: 20px;
+            border: 1px solid rgb(0, 0, 0);
+        }
+        fieldset{
+            background-color: whitesmoke;
+            margin: 10px;
+            width: 100%;
+            border-radius: 20px;
+            border: 1px solid rgb(0, 0, 0);
+        }
+        #ma{
+            margin: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+            <form action="noway.php">
+            <h1>Technology Survey Form</h1>
+            <h3>Please fill the details correctly</h2>
+                <hr>
+        <div>
+            Full Name : <input type="text" class="pa" name="name" placeholder="    Enter your name" required>
+        </div>
+        <div>
+            Email ID :  <input type="email" class="pa" name="email" placeholder="    Enter your email" required>
+        </div>
+        <div>
+            Phone Number : <input type="number" class="pa" name="number" placeholder="    Enter your phone number"required>
+        </div>
+        <div>
+            <fieldset>
+                <legend >Gender</legend>
+            Male <input type="radio" name="gender" id="ma"> Female <input type="radio" name="gender" id="fe">
+        </fieldset>
+        </div>
+        <div >
+            Technology familiar with :<br>
+        
+            <input class="checks"  type="checkbox" name="web" id="w"><label for="w">WebDev</label><br>
+            <input class="checks"  type="checkbox" name="android" id="a"><label for="a">AndroidDev</label><br>
+            <input class="checks"  type="checkbox" name="ai" id="ar"><label for="ar">AI</label><br>
+            <input class="checks"  type="checkbox" name="ml" id="m"><label for="m">MachineLearning</label><br>
+            <input class="checks"  type="checkbox" name="ds" id="d"><label for="d">DataScience</label><br>
+            <input class="checks"  type="checkbox" name="bchain" id="bc"><label for="bc">BlockChain</label><br>
+            <input class="checks"  type="checkbox" name="bdata" id="b"><label for="b">BigData</label><br>
+            <input class="checks"  type="checkbox" name="cc" id="c"><label for="c">CloudComputing</label><br>
+        </div>
+        <div>
+            <input class="checks" id="sub"  type="submit" value="Submit Now">
+        </div>
+    </form>
+</div>
+</body>
+</html>
