@@ -5,7 +5,12 @@ addAssignees: author
 # A list of reviewers to be added to pull requests (GitHub user name)
 reviewers:
   - KamalDGRT
-  
+  - javeed3157
+  - JAYAROSHINI2112
 skipKeywords:
   - wip
   - draft
+
+# A number of reviewers added to the pull request
+# Set 0 to add all the reviewers (default: 0)
+numberOfReviewers: 0
