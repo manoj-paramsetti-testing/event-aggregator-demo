@@ -1,9 +1,8 @@
 addReviewers: true
 
-addAssignees: author
+addAssignees: true
 
-# A list of reviewers to be added to pull requests (GitHub user name)
-reviewers:
+reviewers: 
   - KamalDGRT
   - javeed3157
   - JAYAROSHINI2112
@@ -11,5 +10,5 @@ reviewers:
 skipKeywords:
   - wip
   - draft
-
-numberOfReviewers: 0
+  
+numberOfReviewers: 3
